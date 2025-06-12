@@ -44,6 +44,16 @@ def view_summary(data):
         print(f"- ${exp['amount']} for {exp['category']}")
     print("----------------------")
 
+def clear_budget(data):
+    confirm = input("Are you sure you want to clear all budget data? (yes/no): ").lower()
+    if confirm == 'yes':
+        data['income'] = 0
+        data['expenses'] = []
+        save_data(data)
+        print("Budget data cleared!")
+    else:
+        print("Clear budget canceled.")
+
 def main():
     data = load_data()
 
@@ -61,6 +71,8 @@ def main():
         elif choice == '3':
             view_summary(data)
         elif choice == '4':
+            clear_budegt(data)
+        elif choice 5 == '5':
             break
         else:
             print("Invalid choice, please try again.")

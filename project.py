@@ -73,7 +73,7 @@ def main():
             view_summary(data)
         elif choice == '4':
             clear_budegt(data)
-        elif choice 5 == '5':
+        elif choice == '5':
             break
         else:
             print("Invalid choice, please try again.")

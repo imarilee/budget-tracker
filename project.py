@@ -72,7 +72,7 @@ def main():
         elif choice == '3':
             view_summary(data)
         elif choice == '4':
-            clear_budegt(data)
+            clear_budget(data)
         elif choice == '5':
             break
         else:

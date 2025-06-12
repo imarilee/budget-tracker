@@ -61,7 +61,8 @@ def main():
         print("\n1. Add Income")
         print("2. Add Expenses")
         print("3. View Summary")
-        print("4. Exit")
+        print("4. Clear Budget")
+        print("5. Exit")
         choice = input("Choose an option: ")
 
         if choice == '1':
